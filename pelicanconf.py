@@ -5,9 +5,12 @@ from __future__ import unicode_literals
 # Sitio web
 SITEURL = 'http://www.hielitodelimon.com'
 SITENAME = 'Hielito de Limón'
+SITELOGO = 'theme/images/movimientolibre.png'
+SITEDESCRIPTION = 'Una empresa de éxito'
+SITETWITTER = '@hielitodelimon'
 
 # Autor
-AUTHOR = 'rosyespin'
+AUTHOR = 'Rosa Elena Espinoza (rosyespin)'
 
 # Directorio donde esta el contenido
 PATH = 'content'
@@ -24,7 +27,7 @@ STATIC_PATHS = ['CNAME', 'favicon.ico', 'LICENSE', 'README.md', 'robots.txt',
                 'articulos', 'images']
 
 # Usar el nombre del directorio como la categoría
-USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = False
 
 # Los artículos van en directorios por categoria/titulo/
 ARTICLE_URL = '{category}/{slug}/'
@@ -34,115 +37,30 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 PAGE_URL = '{category}/{slug}/'
 PAGE_SAVE_AS = '{category}/{slug}/index.html'
 
-# Tema NEST
-THEME = 'themes/nest'
-SITESUBTITLE = u'My Awesome Blog'
-# Minified CSS
-NEST_CSS_MINIFY = True
-# Add items to top menu before pages
-MENUITEMS = [('Inicio', '/'),('Categorías','/categories.html')]
-# Add header background image from content/images : 'background.jpg'
-NEST_HEADER_IMAGES = 'lime-popsicle.jpg'
-NEST_HEADER_LOGO = '/images/favicon.png'
-# Footer
-NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
-NEST_SITEMAP_MENU = [('Archives', '/archives.html'),('Tags','/tags.html'), ('Authors','/authors.html')]
-NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
-NEST_SITEMAP_RSS_LINK = u'RSS Feed'
-NEST_SOCIAL_COLUMN_TITLE = u'Social'
-NEST_LINKS_COLUMN_TITLE = u'Links'
-NEST_COPYRIGHT = u'&copy; blogname 2015'
-# Footer optional
-NEST_FOOTER_HTML = ''
-# index.html
-NEST_INDEX_HEAD_TITLE = u'Inicio'
-NEST_INDEX_HEADER_TITLE = u'Hielito de Limón'
-NEST_INDEX_HEADER_SUBTITLE = u'Smashing The Stack For Fun And Profit'
-NEST_INDEX_CONTENT_TITLE = u'Last Posts'
-# archives.html
-NEST_ARCHIVES_HEAD_TITLE = u'Archives'
-NEST_ARCHIVES_HEAD_DESCRIPTION = u'Posts Archives'
-NEST_ARCHIVES_HEADER_TITLE = u'Archives'
-NEST_ARCHIVES_HEADER_SUBTITLE = u'Archives for all posts'
-NEST_ARCHIVES_CONTENT_TITLE = u'Archives'
-# article.html
-NEST_ARTICLE_HEADER_BY = u'By'
-NEST_ARTICLE_HEADER_MODIFIED = u'modified'
-NEST_ARTICLE_HEADER_IN = u'in category'
-# author.html
-NEST_AUTHOR_HEAD_TITLE = u'Posts by'
-NEST_AUTHOR_HEAD_DESCRIPTION = u'Posts by'
-NEST_AUTHOR_HEADER_SUBTITLE = u'Posts archives'
-NEST_AUTHOR_CONTENT_TITLE = u'Posts'
-# authors.html
-NEST_AUTHORS_HEAD_TITLE = u'Author list'
-NEST_AUTHORS_HEAD_DESCRIPTION = u'Author list'
-NEST_AUTHORS_HEADER_TITLE = u'Author list'
-NEST_AUTHORS_HEADER_SUBTITLE = u'Archives listed by author'
-# categories.html
-NEST_CATEGORIES_HEAD_TITLE = u'Categorías'
-NEST_CATEGORIES_HEAD_DESCRIPTION = u'Archives listed by category'
-NEST_CATEGORIES_HEADER_TITLE = u'Categories'
-NEST_CATEGORIES_HEADER_SUBTITLE = u'Archives listed by category'
-# category.html
-NEST_CATEGORY_HEAD_TITLE = u'Category Archive'
-NEST_CATEGORY_HEAD_DESCRIPTION = u'Category Archive'
-NEST_CATEGORY_HEADER_TITLE = u'Category'
-NEST_CATEGORY_HEADER_SUBTITLE = u'Category Archive'
-# pagination.html
-NEST_PAGINATION_PREVIOUS = u'Previous'
-NEST_PAGINATION_NEXT = u'Next'
-# period_archives.html
-NEST_PERIOD_ARCHIVES_HEAD_TITLE = u'Archives for'
-NEST_PERIOD_ARCHIVES_HEAD_DESCRIPTION = u'Archives for'
-NEST_PERIOD_ARCHIVES_HEADER_TITLE = u'Archives'
-NEST_PERIOD_ARCHIVES_HEADER_SUBTITLE = u'Archives for'
-NEST_PERIOD_ARCHIVES_CONTENT_TITLE = u'Archives for'
-# tag.html
-NEST_TAG_HEAD_TITLE = u'Tag archives'
-NEST_TAG_HEAD_DESCRIPTION = u'Tag archives'
-NEST_TAG_HEADER_TITLE = u'Tag'
-NEST_TAG_HEADER_SUBTITLE = u'Tag archives'
-# tags.html
-NEST_TAGS_HEAD_TITLE = u'Tags'
-NEST_TAGS_HEAD_DESCRIPTION = u'Tags List'
-NEST_TAGS_HEADER_TITLE = u'Tags'
-NEST_TAGS_HEADER_SUBTITLE = u'Tags List'
-NEST_TAGS_CONTENT_TITLE = u'Tags List'
-NEST_TAGS_CONTENT_LIST = u'tagged'
-# Static files
-#STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', 'extra/logo.svg']
-#EXTRA_PATH_METADATA = {
-#    'extra/robots.txt': {'path': 'robots.txt'},
-#    'extra/favicon.ico': {'path': 'favicon.ico'},
-#    'extra/logo.svg': {'path': 'logo.svg'}
-#}
-
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# Tema
+THEME = 'themes/bootstrap-4'
 
 # Lenguaje y zona horaria
 DEFAULT_LANG = 'es'
 TIMEZONE = 'America/Mexico_City'
 
-# Borrar toda la salida,
-# puede borrar directorios ocultos como .git, use si está seguro
-DELETE_OUTPUT_DIRECTORY = False
-
-# Para desarrollo los vinculos son relativos
+# Para desarrollo, los vinculos son relativos
 RELATIVE_URLS = True
 
 # Para desarrollo, se desactiva la paginacion
 DEFAULT_PAGINATION = False
-#DEFAULT_PAGINATION = 8
-#DEFAULT_ORPHANS = 2
+
+# Para desarrollo, no hay cargas desde Internet
+USE_REMOTE_SERVICES = True
+
+# Para desarrollo, borrar todo output
+DELETE_OUTPUT_DIRECTORY = True
+
+# No eliminar de output los siguientes directorios y archivos
+OUTPUT_RETENTION = ['.git', '.gitignore']
+
+# Siempre aprovechar lo que se tenga en caché
+LOAD_CONTENT_CACHE = True
 
 # Para desarrollo se desactiva la generacion de feeds
 FEED_ALL_ATOM = None
@@ -155,9 +73,3 @@ TAG_FEED_ATOM = None
 TAG_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
-
-# Para desarrollo, recomendado mantener en falso
-LOAD_CONTENT_CACHE = False
-
-# Para desarrollo, no usar dependencias en Internet
-USE_REMOTE_SERVICES = False

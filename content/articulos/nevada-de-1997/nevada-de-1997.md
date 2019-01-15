@@ -4,8 +4,9 @@ Summary: “¡Está nevando!”, dijo mi papá. Ese día la ciudad se paralizó,
 Tags: vida cotidiana
 Date: 2007-12-12 18:30
 Modified: 2007-12-12 18:30
-Author: rosyespin
-Illustration: lime-popsicle.jpg
+Author: Rosa Elena Espinoza
+Category: articulos
+Preview: preview.jpg
 
 
 La noche del 11 de diciembre de 1997, como las 9 pm nos encontrábamos Guillermo y yo (en aquel entonces mi novio), tratando de **no** congelarnos dentro del viejo auto de mi papá (sin calefacción). Permanecíamos con las manos entrelazadas, hablando trivialidades, mirándonos a los ojos, como si nada pasara. No nos podíamos ver a diario, y ni aquel _frillazo_ podía impedir que pasáramos un momento juntos, a pesar de que cada vez más se sentía el descenso de la temperatura. En el parabrisas se veía como el viento estrellaba diminutas gotas de agua, y por un momento se me ocurrió: **¿será que irá a nevar? ... ¡¡No!! Eso aquí nunca pasa...**
