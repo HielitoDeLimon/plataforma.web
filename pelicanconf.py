@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 # Sitio web
-SITEURL = 'https://hielitodelimon.com'
+SITEURL = 'https://www.hielitodelimon.com'
 SITENAME = 'Hielito de Limón'
 SITELOGO = 'theme/images/movimientolibre.png'
 SITEDESCRIPTION = 'Una empresa de éxito'
